@@ -3,6 +3,7 @@ import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 import Navigator from './routes/drawer';
 
+
 const getFonts = () => Font.loadAsync({
   'quicksand-light': require('./assets/fonts/Quicksand-Light.ttf'),
   'quicksand-regular': require('./assets/fonts/Quicksand-Regular.ttf'),
