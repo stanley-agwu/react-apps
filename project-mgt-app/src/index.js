@@ -21,11 +21,21 @@ const store = createStore(
     )
   );
   
+const profileSpecificProps = {
+  userProfile: "users",
+  useFirestoreForProfile: true,
+  attachAuthIsReady: true,
+}
+  
+
 const rrfProps = {
   firebase,
   config: firebConfig,
+  config: profileSpecificProps,
   dispatch: store.dispatch,
-  createFirestoreInstance
+  createFirestoreInstance,
+  presence: "presence",
+  sessions: "sessions"
 };
 
 const AuthIsLoaded = ({ children }) => {
