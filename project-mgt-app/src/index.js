@@ -20,18 +20,10 @@ const store = createStore(
         reduxFirestore(firebase, firebConfig),
     )
   );
-  
-const profileSpecificProps = {
-  userProfile: "users",
-  useFirestoreForProfile: true,
-  attachAuthIsReady: true,
-}
-  
 
 const rrfProps = {
   firebase,
   config: firebConfig,
-  config: profileSpecificProps,
   dispatch: store.dispatch,
   createFirestoreInstance,
   presence: "presence",

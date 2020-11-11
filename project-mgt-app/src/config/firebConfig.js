@@ -11,7 +11,11 @@ const firebaseConfig = {
     storageBucket: "project-mgt-app-13d09.appspot.com",
     messagingSenderId: "665423833065",
     appId: "1:665423833065:web:ae30e4335a14c49823cd78",
-    measurementId: "G-9SKRK019F9"
+    measurementId: "G-9SKRK019F9",
+    userProfile: 'users',
+    useFirestoreForProfile: true,
+    enableRedirectHandling: false,
+    resetBeforeLogin: false
   };
 
   firebase.initializeApp(firebaseConfig);
