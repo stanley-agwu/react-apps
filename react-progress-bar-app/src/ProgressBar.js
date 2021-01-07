@@ -6,10 +6,7 @@ const Container = Styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
-
-    h1{
-        margin-top: 100px;
-    }
+    height: 100vh;
 
     p{
         font-weight: 600;
@@ -39,9 +36,9 @@ const Container = Styled.div`
 const ProgressBar = ({ value, max, color, width }) => {
   return (
     <Container color={color} width={width}>
-        <h1>Progress Bar</h1>
+        <span><h1>Progress Bar</h1>
         <progress value={value} max={max} />
-        <p>{(value / max) * 100}%</p>
+        <p>{(value / max) * 100}%</p></span>
     </Container>
   );
 };
