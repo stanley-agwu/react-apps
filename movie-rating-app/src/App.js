@@ -1,8 +1,17 @@
+import Header from './components/Header'
+import AddMovie from './components/AddMovie';
+import MoviesUI  from './components/MovieUI'
+
 const App = () =>{
   return (
     <div className="App">
-      <h1>Movie Rating App</h1>
+      <Header />
+      <div className="inner-App">
+        <MoviesUI />
+        <AddMovie />
       </div>
+             
+    </div>
   )
 }
 
