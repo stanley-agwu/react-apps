@@ -8,16 +8,14 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setValue(oldValue => {
-        const newValue = oldValue + 10;
-
+        const newValue = oldValue <= 90 && oldValue + 10;
         newValue === 100 && clearInterval(interval);
-
         return newValue;
       });
     }, 1000);
   }, []);
   return (
-    <ProgressBar color={"#F87575"} width={"350px"} value={value} max={100} />
+    <ProgressBar color={"#F87575"} width={"450px"} value={value} max={100} />
   );
 }
 export default App;
