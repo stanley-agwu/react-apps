@@ -5,12 +5,9 @@
 } */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
   background-color: #D6FFF6;
+  
   
 }
 
@@ -19,11 +16,20 @@ code {
     monospace;
 }
 .Main{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  width: 600px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
   flex-direction: column;
+  border: 1px solid grey;
+
 }
 .Section{
   background-color: #f2f2f2;
@@ -40,6 +46,6 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
