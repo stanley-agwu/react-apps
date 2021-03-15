@@ -15,7 +15,7 @@ function App() {
     }, 1000);
   }, []);
   return (
-    <ProgressBar color={"#F87575"} width={"450px"} value={value} max={100} />
+    <ProgressBar color={"#F87575"} width={"650px"} value={value} max={100} />
   );
 }
 export default App;
