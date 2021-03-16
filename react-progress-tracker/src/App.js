@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Title = styled.h1`
   text-align: center;
-  color: #E6AACE;
+  color: #b19cd9;
   font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
   margin: 20px;
   padding: 0;
@@ -23,6 +23,7 @@ const Main = styled.div`
   border-radius: 20px;
   margin: 0 auto;
   padding: 0;
+  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
