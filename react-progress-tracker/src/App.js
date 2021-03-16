@@ -1,23 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import Header from './components/header'
+import Section from './components/section'
 
-const Title = styled.h1`
-  text-align: center;
-  color: #b19cd9;
-  font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
-  margin: 20px;
-  padding: 0;
-`
-const Section = styled.div`
-  background-color: #f2f2f2;
-  width: 350px;
-  height: 50px;
-  border-radius: 10px;
-  border: 3px solid grey;
-  margin: 10px;
-`
-
-const Main = styled.div`
+const StyledApp = styled.div`
   font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
   width: 600px;
   border-radius: 20px;
@@ -32,45 +18,18 @@ const Main = styled.div`
   border: 1px solid grey;
 `
 
-const WeekdayTitle = styled.div`
-  width: 50px;
-  height: 100%;
-  border-right: 3px solid lightgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  color: #ff6961;
-`
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-      <Main>
-        <Title>Daily Progress Tracker</Title>
-        <Section>
-          <WeekdayTitle>M</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>T</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>W</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>T</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>F</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>S</WeekdayTitle>
-        </Section>
-        <Section>
-          <WeekdayTitle>S</WeekdayTitle>
-        </Section>
-      </Main>
-    </div>
+    <StyledApp>
+            <Header />
+            <Section day={"M"} />
+            <Section day={"T"} />
+            <Section day={"W"} />
+            <Section day={"T"} />
+            <Section day={"F"} />
+            <Section day={"S"} />
+            <Section day={"S"} />
+      </StyledApp>
   );
 }
 
