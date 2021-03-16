@@ -108,8 +108,8 @@ body {
   }
 }
 @media(max-width: 480px){
-  .header h1{
-    font-size: 1.8rem;
+  .header {
+    height: 12vh;
   }
   .inner-App{
     width: 90%;

@@ -9,8 +9,7 @@ const App = () =>{
       <div className="inner-App">
         <MoviesUI />
         <AddMovie />
-      </div>
-             
+      </div>         
     </div>
   )
 }

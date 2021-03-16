@@ -15,8 +15,9 @@ const MoviesUI = () =>{
                     <div className="movie" key={movie.id}>
                         <h3>{movie.title}</h3>
                         <span onClick={() => handleDelete(movie.id)}><i className="far fa-trash-alt"></i></span>
-                        <p>{movie.director}</p>
-                        <p>{movie.genre}</p>
+                        <p>Director: {movie.director}</p>
+                        <p>Genre: {movie.genre}</p>
+                        <p>Rating: {movie.rating}</p>
                     </div>
                     )
                 })
