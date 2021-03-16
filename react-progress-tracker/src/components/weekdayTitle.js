@@ -11,10 +11,17 @@ const StyledWeekdayTitle = styled.div`
   font-size: 2.5rem;
   color: #ff6961;
 `
-
+const StyledWeekendTitle = styled(StyledWeekdayTitle)`
+  background-color: lightgrey;
+  border-radius: 7px 0 0 7px;
+`
 const WeekdayTitle = ({ day }) => {
-    return (
-        <StyledWeekdayTitle>{day}</StyledWeekdayTitle>
+  const isWeekday = day !== "S"
+  return (
+    <>
+      {(isWeekday) && <StyledWeekdayTitle>{day}</StyledWeekdayTitle>}
+      {(!isWeekday) &&<StyledWeekendTitle>{day}</StyledWeekendTitle>}
+    </>
     )
 
 }

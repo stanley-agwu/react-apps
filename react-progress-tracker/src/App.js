@@ -16,6 +16,7 @@ const StyledApp = styled.div`
   min-height: 90vh;
   flex-direction: column;
   border: 1px solid grey;
+  box-sizing: border-box;
 `
 
 const App = () => {
