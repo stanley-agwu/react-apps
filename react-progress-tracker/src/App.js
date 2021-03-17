@@ -4,7 +4,6 @@ import Header from './components/header'
 import Section from './components/section'
 
 const StyledApp = styled.div`
-  box-sizing: border-box;
   font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
   width: 600px;
   margin: 0 auto;
@@ -29,19 +28,18 @@ const Container = styled.div`
   
 `
 
-
 const App = () => {
   return (
     <StyledApp>
             <Header />
             <Container>
-              <Section day={"M"} />
-              <Section day={"T"} />
-              <Section day={"W"} />
-              <Section day={"T"} />
-              <Section day={"F"} />
-              <Section day={"S"} />
-              <Section day={"S"} />
+              <Section day={"M"} width={"85%"} />
+              <Section day={"T"} width={"100%"} />
+              <Section day={"W"} width={"40%"} />
+              <Section day={"T"} width={"65%"} />
+              <Section day={"F"} width={"70%"} />
+              <Section day={"S"} width={"25%"} />
+              <Section day={"S"} width={"45%"} />
             </Container>
       </StyledApp>
   );
