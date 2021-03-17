@@ -18,7 +18,6 @@ const StyledSection = styled.div`
 `
 
 const Section = ({ day, progress }) => {
-    console.log(day)
     return (
         <StyledSection>
           <WeekdayTitle day={day} /> 

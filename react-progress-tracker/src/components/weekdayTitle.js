@@ -10,6 +10,9 @@ const StyledWeekdayTitle = styled.div`
   align-items: center;
   font-size: 2.5rem;
   color: #ff6961;
+  &:hover {
+    color: #cc0a00;
+  }
 `
 const StyledWeekendTitle = styled(StyledWeekdayTitle)`
   background-color: lightgrey;

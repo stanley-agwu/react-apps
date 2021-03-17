@@ -10,7 +10,14 @@ const StyledProgressBar = styled(StyledProgressContainer)`
     box-sizing: border-box;
     width: ${({ width }) => width || "0"};
     height: 100%;
-    background-color: red;
+    background-color: ${({width}) => {
+        let newWidth = width.replace(/\D/g, "")
+        newWidth = parseInt(newWidth)
+        if (newWidth >= 80) return "green"
+        else if (newWidth >= 60) return "yellow"
+        else if (newWidth >= 40) return "orange"
+        else return "red"
+    }};
 `
 
 const ProgressBar = ({ progress }) => {

@@ -14,6 +14,9 @@ const Title = styled.h1`
   justify-content: center;
   align-items: center;
   background-color: #cccccc;
+  &:hover {
+    color: #422a6f;
+  }
   @media (max-width: 480px){
     font-size: 1.8rem;
     height: 12vh;
