@@ -17,12 +17,12 @@ const StyledSection = styled.div`
   }
 `
 
-const Section = ({ day, width }) => {
+const Section = ({ day, progress }) => {
     console.log(day)
     return (
         <StyledSection>
           <WeekdayTitle day={day} /> 
-          <ProgressBar width={width} />         
+          <ProgressBar progress={progress} />         
         </StyledSection>
 
     )

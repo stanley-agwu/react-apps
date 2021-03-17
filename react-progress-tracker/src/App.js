@@ -33,13 +33,13 @@ const App = () => {
     <StyledApp>
             <Header />
             <Container>
-              <Section day={"M"} width={"85%"} />
-              <Section day={"T"} width={"100%"} />
-              <Section day={"W"} width={"40%"} />
-              <Section day={"T"} width={"65%"} />
-              <Section day={"F"} width={"70%"} />
-              <Section day={"S"} width={"25%"} />
-              <Section day={"S"} width={"45%"} />
+              <Section day={"M"} progress={"85%"} />
+              <Section day={"T"} progress={"100%"} />
+              <Section day={"W"} progress={"40%"} />
+              <Section day={"T"} progress={"65%"} />
+              <Section day={"F"} progress={"70%"} />
+              <Section day={"S"} progress={"25%"} />
+              <Section day={"S"} progress={"45%"} />
             </Container>
       </StyledApp>
   );

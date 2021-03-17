@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledProgressContainer = styled.div`
-    width: 300px;
+    width: 85%;
     height: 100%;
     border-radius: 0 7px 7px 0;
 `
@@ -13,10 +13,10 @@ const StyledProgressBar = styled(StyledProgressContainer)`
     background-color: red;
 `
 
-const ProgressBar = ({ width }) => {
+const ProgressBar = ({ progress }) => {
     return (
         <StyledProgressContainer>
-            <StyledProgressBar width={width} />
+            <StyledProgressBar width={progress} />
         </StyledProgressContainer>
     )
 }
