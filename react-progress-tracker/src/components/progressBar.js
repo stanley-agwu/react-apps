@@ -39,8 +39,7 @@ const ProgressBar = ({ progress, dayNum }) => {
     return (
         <StyledProgressContainer>
             {today !== dayNum && <StyledProgressBar width={progress} />}
-            {today === dayNum && <TodayProgressBar width={progress} >{progress}</TodayProgressBar>}
-            
+            {today === dayNum && <TodayProgressBar width={progress} >{progress}</TodayProgressBar>} 
         </StyledProgressContainer>
     )
 }
