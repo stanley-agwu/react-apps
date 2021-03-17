@@ -9,6 +9,9 @@ const StyledSection = styled.div`
     border-radius: 10px;
     border: 3px solid grey;
     margin: 10px;
+    @media (max-width: 480px){
+    width: 90%;
+  }
 `
 
 const Section = ({ day }) => {
