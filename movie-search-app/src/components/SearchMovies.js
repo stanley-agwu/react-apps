@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 
-const SearchMovies = () => {
+const SearchMovies = ( { addMovies }) => {
     const [queryString, setQueryString] = useState("")
-    const [movies, setMovies] = useState([])
     const searchMovies = async (e) => {
         e.preventDefault()
-        const API_KEY = AP_KEY_String
+        const API_KEY = API_KEY_String
 
         const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&
                         language=en-US&query=${queryString}&page=1&include_adult=false`
         try {
             const response = await fetch(url)
-            const data = await response.json()
-            let moviesArray = data.results.map(movie => movie.title)
-            setMovies({movies:moviesArray})           
+            const data = await response.json() 
+            addMovies(data.results)
+            console.log(data.results)
+
         } catch (error) {
             console.error(error)
 
