@@ -1,9 +1,12 @@
+import DisplayMovies from './components/DisplayMovies';
+import Header from './components/Header';
 import SearchMovies from './components/SearchMovies'
 
 const Main = () => {
   return (
     <div className="container">
-      <h1 className="title">React Movie Search App</h1>
+      <Header />
+      <DisplayMovies />
       <SearchMovies />
     </div>
   );
