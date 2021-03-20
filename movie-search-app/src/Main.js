@@ -1,9 +1,10 @@
-
+import SearchMovies from './components/SearchMovies'
 
 const Main = () => {
   return (
-    <div className="Main">
-      
+    <div className="container">
+      <h1 className="title">React Movie Search App</h1>
+      <SearchMovies />
     </div>
   );
 }
