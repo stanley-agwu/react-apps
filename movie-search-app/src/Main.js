@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import DisplayMovies from './components/DisplayMovies';
+import MoviesSearch from './components/MoviesSearch';
 import Header from './components/Header';
-import SearchMovies from './components/SearchMovies'
+import MoviesDisplay from './components/MoviesDisplay'
 
 const Main = () => {
   const [movies, setMovies] = useState([])
@@ -12,8 +12,8 @@ const Main = () => {
   return (
     <div className="container">
       <Header />
-      <DisplayMovies movies={movies} />
-      <SearchMovies addMovies={addMovies} />
+      <MoviesDisplay movies={movies} />
+      <MoviesSearch addMovies={addMovies} />
     </div>
   );
 }

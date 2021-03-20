@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const SearchMovies = ( { addMovies }) => {
+const MoviesSearch = ( { addMovies }) => {
     const [queryString, setQueryString] = useState("")
     const searchMovies = async (e) => {
         e.preventDefault()
@@ -28,4 +28,4 @@ const SearchMovies = ( { addMovies }) => {
         </form>
     )
 }
-export default SearchMovies
+export default MoviesSearch
