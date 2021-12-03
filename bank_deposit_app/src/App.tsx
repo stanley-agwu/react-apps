@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators, State } from './state';
-import { GlobalStyle } from './styles/styles';
+import { GlobalStyle, Wrapper, Container } from './styles/styles';
 
 
 const App: React.FC = () => {
@@ -13,21 +13,21 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <div className="App">
+      <Wrapper>
         <h1>Simple Bank Account</h1>
-        <h2>{amount}</h2>
-        <div>
+        <h2>{`$ ${amount}`}</h2>
+        <Container>
           <input type="text" />
           <button onClick={() => deposit(1000)}>Deposit</button>
-        </div>
-        <div>
+        </Container>
+        <Container>
           <input type="text" />
           <button onClick={() => withdraw(500)}>Withdraw</button>
-        </div>
-        <div>
+        </Container>
+        <Container>
           <button onClick={() => closeAccount()}>Close Account</button>
-        </div>
-      </div>
+        </Container>
+      </Wrapper>
     </>
   );
 }
