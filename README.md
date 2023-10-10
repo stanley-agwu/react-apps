@@ -1,3 +1,3 @@
-# react-progress-tracker
-You can view [Daily Coding Progress Tracker](https://upbeat-archimedes-f063cc.netlify.app/)
+# React-Apps
 
+A collection of beginner level miscellaneous react apps.
